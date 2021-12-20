@@ -94,6 +94,30 @@
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <RcItem Include="..\Imagens\ICO_FACEBOOK_1.fw.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>FACE1</ResourceId>
+        </RcItem>
+        <RcItem Include="..\Imagens\ICO_FACEBOOK_2.fw.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>FACE2</ResourceId>
+        </RcItem>
+        <RcItem Include="..\Imagens\ICO_INSTAGRAM_1.fw.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>INSTA1</ResourceId>
+        </RcItem>
+        <RcItem Include="..\Imagens\ICO_INSTAGRAM_2.fw.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>INSTA2</ResourceId>
+        </RcItem>
+        <RcItem Include="..\Imagens\ICO_TWITTER_1.fw.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>TWITTER1</ResourceId>
+        </RcItem>
+        <RcItem Include="..\Imagens\ICO_TWITTER_2.fw.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>TWITTER2</ResourceId>
+        </RcItem>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -116,9 +140,45 @@
                 </Source>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="..\Imagens\ICO_FACEBOOK_1.fw.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Imagens\ICO_TWITTER_1.fw.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Imagens\ICO_INSTAGRAM_1.fw.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Imagens\ICO_INSTAGRAM_2.fw.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Debug\LayoutIncrivel.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>LayoutIncrivel.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Imagens\ICO_TWITTER_2.fw.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Imagens\ICO_FACEBOOK_2.fw.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

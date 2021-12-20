@@ -1,5 +1,7 @@
 program LayoutIncrivel;
 
+{$R *.dres}
+
 uses
   Vcl.Forms,
   FPrincipal in 'FPrincipal.pas' {Form1};
