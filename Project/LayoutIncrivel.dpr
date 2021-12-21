@@ -4,7 +4,8 @@ program LayoutIncrivel;
 
 uses
   Vcl.Forms,
-  FPrincipal in 'FPrincipal.pas' {Form1};
+  FPrincipal in 'FPrincipal.pas' {Form1},
+  Gerenciador.Form in 'Gerenciador.Form.pas';
 
 {$R *.res}
 

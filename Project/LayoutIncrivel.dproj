@@ -94,6 +94,7 @@
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Gerenciador.Form.pas"/>
         <RcItem Include="..\Imagens\ICO_FACEBOOK_1.fw.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>FACE1</ResourceId>
@@ -118,6 +119,14 @@
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>TWITTER2</ResourceId>
         </RcItem>
+        <RcItem Include="..\Imagens\BUTTON_1.fw.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>BTN1</ResourceId>
+        </RcItem>
+        <RcItem Include="..\Imagens\BUTTON_2.fw.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>BTN2</ResourceId>
+        </RcItem>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -140,7 +149,13 @@
                 </Source>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="..\Imagens\ICO_FACEBOOK_1.fw.png" Configuration="Debug" Class="ProjectFile">
+                <DeployFile LocalName="..\Imagens\ICO_FACEBOOK_2.fw.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Imagens\BUTTON_2.fw.png" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
@@ -176,7 +191,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\Imagens\ICO_FACEBOOK_2.fw.png" Configuration="Debug" Class="ProjectFile">
+                <DeployFile LocalName="..\Imagens\BUTTON_1.fw.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Imagens\ICO_FACEBOOK_1.fw.png" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>

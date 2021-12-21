@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
-  Vcl.Imaging.pngimage;
+  Vcl.Imaging.pngimage, Vcl.StdCtrls;
 
 type
   TForm1 = class(TForm)
@@ -28,6 +28,14 @@ type
     imgFace: TImage;
     imgInsta: TImage;
     imgTwiter: TImage;
+    Panel14: TPanel;
+    Panel15: TPanel;
+    Panel16: TPanel;
+    Image3: TImage;
+    Panel17: TPanel;
+    Shape2: TShape;
+    Label1: TLabel;
+    Image4: TImage;
     procedure Panel13Click(Sender: TObject);
     procedure Panel12Click(Sender: TObject);
     procedure Panel11Click(Sender: TObject);
@@ -40,6 +48,8 @@ type
     procedure imgInstaMouseLeave(Sender: TObject);
     procedure imgTwiterMouseEnter(Sender: TObject);
     procedure imgTwiterMouseLeave(Sender: TObject);
+    procedure Image4MouseEnter(Sender: TObject);
+    procedure Image4MouseLeave(Sender: TObject);
   private
     procedure MoveShapItem(Value: TPanel);
     procedure ImageResource(AResource: string; AImage: TImage);
@@ -62,6 +72,16 @@ begin
   imgFace.Top   := imgInsta.Top - 75;
   imgTwiter.Top := imgInsta.Top + 75;
 
+end;
+
+procedure TForm1.Image4MouseEnter(Sender: TObject);
+begin
+  ImageResource('BTN2', Image4);
+end;
+
+procedure TForm1.Image4MouseLeave(Sender: TObject);
+begin
+  ImageResource('BTN1', Image4);
 end;
 
 procedure TForm1.ImageResource(AResource: string; AImage: TImage);
