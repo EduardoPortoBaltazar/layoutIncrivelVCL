@@ -75,6 +75,8 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -91,10 +93,19 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="FPrincipal.pas">
-            <Form>Form1</Form>
+            <Form>frmPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Gerenciador.Form.pas"/>
+        <DCCReference Include="..\Source\Form.Explorer.pas">
+            <Form>frmExplorer</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Source\Form.Frame.pas">
+            <Form>Frame1</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
         <RcItem Include="..\Imagens\ICO_FACEBOOK_1.fw.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>FACE1</ResourceId>
@@ -147,6 +158,10 @@
                 <Source>
                     <Source Name="MainSource">LayoutIncrivel.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="..\Imagens\ICO_FACEBOOK_2.fw.png" Configuration="Debug" Class="ProjectFile">

@@ -5,10 +5,10 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
-  Vcl.Imaging.pngimage, Vcl.StdCtrls;
+  Vcl.Imaging.pngimage, Vcl.StdCtrls, Gerenciador.Form ;
 
 type
-  TForm1 = class(TForm)
+  TfrmPrincipal = class(TForm)
     Panel1: TPanel;
     Image1: TImage;
     Panel2: TPanel;
@@ -59,32 +59,35 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmPrincipal: TfrmPrincipal;
 
 implementation
+
+uses
+ Form.Explorer;
 
 {$R *.dfm}
 
 { TForm1 }
 
-procedure TForm1.FormResize(Sender: TObject);
+procedure TfrmPrincipal.FormResize(Sender: TObject);
 begin
   imgFace.Top   := imgInsta.Top - 75;
   imgTwiter.Top := imgInsta.Top + 75;
 
 end;
 
-procedure TForm1.Image4MouseEnter(Sender: TObject);
+procedure TfrmPrincipal.Image4MouseEnter(Sender: TObject);
 begin
   ImageResource('BTN2', Image4);
 end;
 
-procedure TForm1.Image4MouseLeave(Sender: TObject);
+procedure TfrmPrincipal.Image4MouseLeave(Sender: TObject);
 begin
   ImageResource('BTN1', Image4);
 end;
 
-procedure TForm1.ImageResource(AResource: string; AImage: TImage);
+procedure TfrmPrincipal.ImageResource(AResource: string; AImage: TImage);
 var
   LResource : TResourceStream;
 begin
@@ -96,37 +99,37 @@ begin
   end;
 end;
 
-procedure TForm1.imgFaceMouseEnter(Sender: TObject);
+procedure TfrmPrincipal.imgFaceMouseEnter(Sender: TObject);
 begin
   ImageResource('FACE2', imgFace);
 end;
 
-procedure TForm1.imgFaceMouseLeave(Sender: TObject);
+procedure TfrmPrincipal.imgFaceMouseLeave(Sender: TObject);
 begin
   ImageResource('FACE1', imgFace);
 end;
 
-procedure TForm1.imgInstaMouseEnter(Sender: TObject);
+procedure TfrmPrincipal.imgInstaMouseEnter(Sender: TObject);
 begin
   ImageResource('INSTA2', imgInsta);
 end;
 
-procedure TForm1.imgInstaMouseLeave(Sender: TObject);
+procedure TfrmPrincipal.imgInstaMouseLeave(Sender: TObject);
 begin
   ImageResource('INSTA1', imgInsta);
 end;
 
-procedure TForm1.imgTwiterMouseEnter(Sender: TObject);
+procedure TfrmPrincipal.imgTwiterMouseEnter(Sender: TObject);
 begin
   ImageResource('TWITTER2', imgTwiter);
 end;
 
-procedure TForm1.imgTwiterMouseLeave(Sender: TObject);
+procedure TfrmPrincipal.imgTwiterMouseLeave(Sender: TObject);
 begin
   ImageResource('TWITTER1', imgTwiter);
 end;
 
-procedure TForm1.MoveShapItem (Value: TPanel);
+procedure TfrmPrincipal.MoveShapItem (Value: TPanel);
 begin
  TThread.CreateAnonymousThread(
   procedure
@@ -142,29 +145,33 @@ begin
  ).Start;
 end;
 
-procedure TForm1.Panel10Click(Sender: TObject);
+procedure TfrmPrincipal.Panel10Click(Sender: TObject);
 begin
  MoveShapItem(TPanel(Sender));
 end;
 
-procedure TForm1.Panel10DblClick(Sender: TObject);
+procedure TfrmPrincipal.Panel10DblClick(Sender: TObject);
 begin
   Close;
 end;
 
-procedure TForm1.Panel11Click(Sender: TObject);
+procedure TfrmPrincipal.Panel11Click(Sender: TObject);
 begin
  MoveShapItem(TPanel(Sender));
 end;
 
-procedure TForm1.Panel12Click(Sender: TObject);
+procedure TfrmPrincipal.Panel12Click(Sender: TObject);
 begin
  MoveShapItem(TPanel(Sender));
+ _Gerenciador := TGerenciadorForm.Create;
+ _Gerenciador.AddForm('Explorer', TfrmExplorer, Panel5, True);
 end;
 
-procedure TForm1.Panel13Click(Sender: TObject);
+procedure TfrmPrincipal.Panel13Click(Sender: TObject);
 begin
  MoveShapItem(TPanel(Sender));
+ _Gerenciador.RemoveForm(_Gerenciador.GetFormIndex.Caption);
+
 end;
 
 end.

@@ -1,9 +1,9 @@
-object Form1: TForm1
+object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   AlphaBlendValue = 200
   BorderStyle = bsNone
-  Caption = 'Form1'
+  Caption = 'frmPrincipal'
   ClientHeight = 591
   ClientWidth = 889
   Color = clBtnFace
@@ -25,8 +25,6 @@ object Form1: TForm1
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 932
-    ExplicitHeight = 597
     DesignSize = (
       889
       591)
@@ -6927,7 +6925,6 @@ object Form1: TForm1
       Anchors = [akLeft, akTop, akRight]
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitWidth = 948
       object Panel6: TPanel
         Left = 0
         Top = 0
@@ -10229,7 +10226,6 @@ object Form1: TForm1
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitWidth = 684
         object Panel8: TPanel
           Left = 0
           Top = 0
@@ -10238,7 +10234,6 @@ object Form1: TForm1
           Align = alTop
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitWidth = 684
           DesignSize = (
             641
             24)
@@ -10261,7 +10256,6 @@ object Form1: TForm1
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 1
-          ExplicitWidth = 684
           object Panel10: TPanel
             Left = 530
             Top = 0
@@ -10273,7 +10267,6 @@ object Form1: TForm1
             TabOrder = 0
             OnClick = Panel10Click
             OnDblClick = Panel10DblClick
-            ExplicitLeft = 573
           end
           object Panel11: TPanel
             Left = 419
@@ -10286,7 +10279,6 @@ object Form1: TForm1
             TabOrder = 1
             OnClick = Panel11Click
             OnDblClick = Panel10DblClick
-            ExplicitLeft = 462
           end
           object Panel12: TPanel
             Left = 308
@@ -10295,11 +10287,10 @@ object Form1: TForm1
             Height = 73
             Align = alRight
             BevelOuter = bvNone
-            Caption = 'Relat'#243'rios'
+            Caption = 'Explorer'
             TabOrder = 2
             OnClick = Panel12Click
             OnDblClick = Panel10DblClick
-            ExplicitLeft = 351
           end
           object Panel13: TPanel
             Left = 197
@@ -10312,7 +10303,6 @@ object Form1: TForm1
             TabOrder = 3
             OnClick = Panel13Click
             OnDblClick = Panel10DblClick
-            ExplicitLeft = 240
           end
         end
       end
@@ -10325,8 +10315,6 @@ object Form1: TForm1
       Anchors = [akLeft, akTop, akRight, akBottom]
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitWidth = 932
-      ExplicitHeight = 509
       object Panel4: TPanel
         Left = 798
         Top = 0
@@ -10335,8 +10323,6 @@ object Form1: TForm1
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 841
-        ExplicitHeight = 509
         DesignSize = (
           91
           503)
@@ -15075,8 +15061,6 @@ object Form1: TForm1
         Padding.Right = 80
         Padding.Bottom = 80
         TabOrder = 1
-        ExplicitWidth = 841
-        ExplicitHeight = 509
         object Panel14: TPanel
           Left = 80
           Top = 80
@@ -15085,10 +15069,6 @@ object Form1: TForm1
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitLeft = 328
-          ExplicitTop = 232
-          ExplicitWidth = 185
-          ExplicitHeight = 41
           object Image3: TImage
             Left = 0
             Top = 105
@@ -19693,9 +19673,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 1
-            ExplicitTop = 70
-            ExplicitWidth = 681
-            ExplicitHeight = 285
             object Panel17: TPanel
               Left = 0
               Top = 0
@@ -19704,7 +19681,6 @@ object Form1: TForm1
               Align = alClient
               BevelOuter = bvNone
               TabOrder = 0
-              ExplicitTop = 6
               object Shape2: TShape
                 Left = 0
                 Top = 0
