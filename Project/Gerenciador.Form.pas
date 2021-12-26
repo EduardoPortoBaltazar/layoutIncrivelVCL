@@ -97,6 +97,6 @@ begin
 end;
 
 initialization
-    _Gerenciador := TGerenciadorForm.New;
+    _Gerenciador := TGerenciadorForm.Create;
 
 end.

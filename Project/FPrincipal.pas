@@ -163,7 +163,6 @@ end;
 procedure TfrmPrincipal.Panel12Click(Sender: TObject);
 begin
  MoveShapItem(TPanel(Sender));
- _Gerenciador := TGerenciadorForm.Create;
  _Gerenciador.AddForm('Explorer', TfrmExplorer, Panel5, True);
 end;
 
