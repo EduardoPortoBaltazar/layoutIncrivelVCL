@@ -9,8 +9,9 @@ uses
 type
   TFrame1 = class(TFrame)
     Panel1: TPanel;
-    Label1: TLabel;
+    lblDescricao: TLabel;
     Shape1: TShape;
+    lblComentario: TLabel;
   private
     { Private declarations }
   public

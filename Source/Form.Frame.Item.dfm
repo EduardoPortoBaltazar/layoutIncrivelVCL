@@ -1,27 +1,20 @@
-object Frame1: TFrame1
+object FrameItem: TFrameItem
   Left = 0
   Top = 0
-  ClientHeight = 152
-  ClientWidth = 492
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = True
-  PixelsPerInch = 96
-  TextHeight = 13
+  Width = 430
+  Height = 189
+  TabOrder = 0
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 492
-    Height = 152
+    Width = 430
+    Height = 189
     Align = alClient
     BevelOuter = bvNone
     Color = 2828067
     ParentBackground = False
     TabOrder = 0
+    OnClick = Panel1Click
     object lblDescricao: TLabel
       Left = 47
       Top = 59
