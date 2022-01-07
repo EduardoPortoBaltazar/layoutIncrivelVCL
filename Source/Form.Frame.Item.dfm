@@ -15,6 +15,8 @@ object FrameItem: TFrameItem
     ParentBackground = False
     TabOrder = 0
     OnClick = Panel1Click
+    OnMouseEnter = Panel1MouseEnter
+    OnMouseLeave = Panel1MouseLeave
     object lblDescricao: TLabel
       Left = 47
       Top = 59
@@ -39,12 +41,12 @@ object FrameItem: TFrameItem
     object lblComentario: TLabel
       Left = 47
       Top = 84
-      Width = 242
-      Height = 48
+      Width = 79
+      Height = 16
       Caption = 'lblComentario'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
-      Font.Height = -40
+      Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
