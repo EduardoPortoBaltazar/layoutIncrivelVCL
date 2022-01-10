@@ -35,7 +35,7 @@ var
 implementation
 
 uses
-  Gerenciador.Form;
+  Gerenciador.Form, Form.Produto;
 
 {$R *.dfm}
 
@@ -56,13 +56,15 @@ var
 begin
   Item1 := TFrameItem.Create(nil);
   Item1.Align := alTop;
+  Item1.PanelInjection('usuario', TfrmProduto, Panel4);
   Item1.lblDescricao.Caption := 'Usuario';
   ItemLista.Add(Item1);
 
-  Item2 := TFrameItem.Create(nil);
-  Item2.Align := alTop;
-  Item2.lblDescricao.Caption := 'Empresa';
-  ItemLista.Add(Item2);
+//  Item2 := TFrameItem.Create(nil);
+//  Item2.Align := alTop;
+//  //Panel Injection
+//  Item2.lblDescricao.Caption := 'Cliente';
+//  ItemLista.Add(Item2);
 
   for I := 0 to Pred(ItemLista.Count) do
     ItemLista[i].Parent := ScrollBox1;
