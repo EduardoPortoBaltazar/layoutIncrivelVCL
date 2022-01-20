@@ -39,7 +39,6 @@ object frmProduto: TfrmProduto
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitTop = -6
       object Label1: TLabel
         Left = 24
         Top = 16
@@ -85,7 +84,7 @@ object frmProduto: TfrmProduto
           ExplicitHeight = 65
         end
         object Edit1: TEdit
-          Left = 24
+          Left = 23
           Top = 6
           Width = 351
           Height = 25
@@ -173,8 +172,6 @@ object frmProduto: TfrmProduto
       Padding.Bottom = 20
       ParentFont = False
       TabOrder = 1
-      ExplicitTop = 89
-      ExplicitHeight = 406
       object DBGrid1: TDBGrid
         Left = 20
         Top = 0
